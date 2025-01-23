@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
+    <style>
+        .Container{
+            box-sizing: border-box;
+            padding: 34px 19px;/* top-bottom left-right  (same with margin)*/
+            background-color: lightcoral;
+            border: 3px solid blue;
+            /* padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;  we can set padding/margin like this top right bottom left (clock wise)*/ 
+            /*padding: 25px 5px 20px 10px;  top right bottom left (same for margin too*/
+            margin: 20px 10px 30px 5px;
+            margin: 14px 19px;
+            border-radius: 30px;
+            width: 233px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <h1>Container</h1>
+    <div class="Container">
+        <h1>This is Heading</h1>
         <p id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptatum minima?  Quibusdam Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, illo!
             velit fugiat quaerat sit distinctio, impedit cum perferendis ipsam facere, unde sapiente? Iure!</p>
     </div>
-    <div>
-        <h1>Container</h1>
+    <div class="Container">
+        <h1>This is Heading</h1>
         <p id="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptatum minima?  Quibusdam Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, illo!
             velit fugiat quaerat sit distinctio, impedit cum perferendis ipsam facere, unde sapiente? Iure!</p>
     </div>
-    <div>
-        <h1>Container</h1>
+    <div class="Container">
+        <h1>This is Heading</h1>
         <p id="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptatum minima?  Quibusdam Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, illo!
             velit fugiat quaerat sit distinctio, impedit cum perferendis ipsam facere, unde sapiente? Iure!</p>
     </div>
