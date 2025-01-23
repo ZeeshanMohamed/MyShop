@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear (Alighnment) </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            
+            font-family: "Ubuntu", serif;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin: auto;
+        }
+        .item{
+            border: 3px solid rgb(204, 87, 20);
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(238, 185, 116);
+        }
+        #fruit{
+            float: right;
+            width: 48%;
+        }
+        #computer{
+            float: right;
+            width: 48%;
+        }
+        #stationary{
+            clear: right;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea reiciendis debitis aliquid libero? Cum nihil vitae et iste officia illo velit cupiditate. Fugiat facilis neque porro provident quae omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore corrupti officia eum quod quaerat. Quas perspiciatis sit eligendi dolorum doloribus iste nobis impedit accusamus est totam quo, numquam, aspernatur harum!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpar" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea reiciendis debitis aliquid libero? Cum nihil vitae et iste officia illo velit cupiditate. Fugiat facilis neque porro provident quae omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, sequi corrupti veritatis excepturi ducimus quis laborum repellat eligendi! Eum voluptate odio exercitationem autem sapiente consectetur quisquam ipsa blanditiis suscipit labore?</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea reiciendis debitis aliquid libero? Cum nihil vitae et iste officia illo velit cupiditate. Fugiat facilis neque porro provident quae omnis.</p>
+        </div>
+        <div id="glass" class="item">
+            <h3>stationary</h3>
+            <p id="glasspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea reiciendis debitis aliquid libero? Cum nihil vitae et iste officia illo velit cupiditate. Fugiat facilis neque porro provident quae omnis.</p>
+        </div>
+    </div>
+</body>
+</html>
