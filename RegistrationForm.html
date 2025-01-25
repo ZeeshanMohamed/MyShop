@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registation form</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
         body{
             background-color: rgb(94, 138, 123);
             margin: 0; 
@@ -13,7 +13,7 @@
             display: flex; 
             justify-content: center; 
             align-items: center;
-          
+            font-family: "Titillium Web", serif;
 
         }
         .container{
@@ -29,11 +29,33 @@
             float: right;
             margin-top: 14px;
             margin-right: 14px;
-            border-radius: 5px;    
+            border-radius: 5px;  
+            overflow: auto;  
         }
-        div > h2{
+        div > h2,p{
             padding-left: 10px;
-            font-family: ;
+            
+            font-size: 15px;
+            font-weight: 200;
+            color: white;
+            position: fixed;
+            bottom: 75px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        div > p{
+            padding-left: 10px;
+            font-family: "Titillium Web", serif;
+            font-size: 10px;
+            font-weight: 200;
+            color: white;
+            position: fixed;
+            bottom: 45px;
+            display: flex;
+            width: 350px;
+        }
+        .left{
+             
         }
 
     </style>
@@ -42,8 +64,11 @@
     <div class="container">
         <div class="image">
             <h2>VitalFlow Northern Lighs</h2>
+            <p>Under the Northern Lights, the universe paints its masterpiece, illuminating the night with ethereal hues and timeless wonder.</p>
         </div>
-
+        <div class="left">
+            <h3 class="rightside">Register Now</h3>
+        </div>
     </div>
 </body>
 </html>
