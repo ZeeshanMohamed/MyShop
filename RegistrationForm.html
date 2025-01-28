@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registation form</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-        body{
-            background-color: rgb(94, 138, 123);
-            margin: 0; 
-            height: 100vh; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center;
-            font-family: "Titillium Web", serif;
-
-        }
-        .container{
-            height: 90%;
-            width: 760px;
-            background-color: white;
-            background-color: white; 
-        }
-        .image{
-            background-image: url("https://cdn.sanity.io/images/9cmi36py/production/2760940903f629a07716d70f3b9542c6ea4fff16-400x600.jpg");
-            width: 380px;
-            height: 550px;
-            float: right;
-            margin-top: 14px;
-            margin-right: 14px;
-            border-radius: 5px;  
-            overflow: auto;  
-        }
-        div > h2,p{
-            padding-left: 10px;
-            
-            font-size: 15px;
-            font-weight: 200;
-            color: white;
-            position: fixed;
-            bottom: 75px;
-            display: flex;
-            justify-content: flex-end;
-        }
-        div > p{
-            padding-left: 10px;
-            font-family: "Titillium Web", serif;
-            font-size: 10px;
-            font-weight: 200;
-            color: white;
-            position: fixed;
-            bottom: 45px;
-            display: flex;
-            width: 350px;
-        }
-        .left{
-             
-        }
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="form.css">
+    
 </head>
+
 <body>
     <div class="container">
-        <div class="image">
-            <h2>VitalFlow Northern Lighs</h2>
-            <p>Under the Northern Lights, the universe paints its masterpiece, illuminating the night with ethereal hues and timeless wonder.</p>
-        </div>
         <div class="left">
-            <h3 class="rightside">Register Now</h3>
+            <h3 class="registerhead">Register Now <br></h3>
+            <p class="registerpara">Brighten your path, discover opportunities,
+                register today with
+                Northern Light!</p>
+            <form action="" class="form-control">
+                <div class="form-control">
+                    <label class="formlabel">E-mail</label><br>
+                    <input class="forminput" type="email" placeholder="Enter Email">
+                </div>
+                <div class="radio">
+                    Gender : <input type="radio" name="myradio"> Male <input type="radio" name="myradio"> Female
+                </div>
+                <div class="form-control">
+                    <label class="formlabel">Password</label><br>
+                    <input class="forminput" type="password" name="" id="placeholder" placeholder="Enter password">
+                </div>
+                <div class="form-control">
+                    <label class="formlabel">Confirm Password</label><br>
+                    <input class="forminput" type="password" name="" id="" placeholder="Confirm Password">
+                </div>
+                <div style="font-size: 12px; padding-top: 5px;">
+                    <input type="checkbox" name="" id="check">
+                    <label for="check" style="font-size: 12px; padding-bottom: 2px; font-weight: 500; ">remember me</label>
+                    <a href="blank" id="link"
+                        style="float: right; padding-right: 57px; color:rgb(94, 138, 123); font-weight: bold; text-decoration: none;">Already
+                        have Account?</a>
+                </div>
+                <div>
+                    <button type="button" id="login">Login</button>
+                    <button type="button" id="google"> <i class="fa-brands fa-google"></i> Sign in With Google</button>
+                </div>
+                <div class="last">
+                    <p>Not registered yet? <a href="" style="text-decoration: none; color: rgb(94, 138, 123);">Create an Account</a></p>
+                </div>
+                
+            </form>
+        </div>
+        <div class="right">
+            <div class="righttext">
+                    <div class="image">
+                    <h2 class="righthead">VitalFlow Northern Lighs</h2>
+                    <p class="rightpara">Under the Northern Lights, the universe paints its masterpiece, illuminating
+                        the night with etherealhues and timeless wonder.</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>

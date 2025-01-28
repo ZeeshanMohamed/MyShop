@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #006d65;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 900px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section {
+            padding: 40px;
+            width: 50%;
+        }
+
+        .form-section h2 {
+            color: #006d65;
+            margin-bottom: 20px;
+        }
+
+        .form-section label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-section input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-section .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .form-section .options a {
+            color: #006d65;
+            text-decoration: none;
+        }
+
+        .form-section button {
+            background-color: #006d65;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-section button:hover {
+            background-color: #005750;
+        }
+
+        .form-section .alternative-login {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .form-section .alternative-login button {
+            background: none;
+            border: 1px solid #ccc;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .image-section {
+            width: 50%;
+            position: relative;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-section .text-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2>Welcome Back</h2>
+            <p>Access your account to manage your wellness journey.</p>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="yourname@email.com" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="8+ characters" required>
+                
+                <div class="options">
+                    <div>
+                        <input type="checkbox" id="remember"> 
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                
+                <button type="submit">Log In</button>
+            </form>
+            <div class="alternative-login">
+                <button>
+                    <img src="google-logo.png" alt="Google logo" width="20"> Sign in with Google
+                </button>
+                <p>Not registered yet? <a href="#">Create an Account</a></p>
+            </div>
+        </div>
+        
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="https://cdn.sanity.io/images/9cmi36py/production/2760940903f629a07716d70f3b9542c6ea4fff16-400x600.jpg" alt="Fitness activity">
+            <div class="text-overlay">
+                <h2>VitalFlow Health and Fitness</h2>
+                <p>Where wellness meets motivation.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

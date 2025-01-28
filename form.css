@@ -1,0 +1,173 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+        body {
+            background-color: rgb(94, 138, 123);
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Titillium Web", serif;
+
+        }
+
+        .container {
+            height: 90%;
+            width: 857px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: left;
+
+        }
+
+        .left {
+            display: inline;
+            margin-top: 25px;
+            margin-left: 2px;
+            height: 550px;
+            width: 400px;
+            /* border: 2px solid black; */
+
+        }
+
+        .registerhead{
+            padding-bottom: 10px;
+
+        }
+        .registerpara{
+            font-size: 11px;
+            padding-top: 0px;
+            padding-bottom: 20px;
+        }
+
+        .form-control {
+            margin-top: 7px;
+
+            display: block;
+        }
+        input[type="radio"]{
+            height: 10px;
+        }
+
+
+        .formlabel ,.radio{
+            font-size: 13px;
+            font-weight: bold;
+            padding-left: 2px;
+            margin-top: 7px;
+            margin-bottom: -50px;
+            height: 66px;
+            width: 400px;
+        }
+
+        .forminput {
+            width: 328px;
+            padding: 8px;
+            font-size: 12px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+
+
+        .checkboxform {
+            /* background-color: rgb(94, 138, 123); */
+            /* justify-content: center; */
+            font-size: 7px;
+            top: 1px;
+
+        }
+
+        #check {
+            margin-top: 3px;
+            margin: 3px;
+        }
+
+        #checkbox {
+            margin: -5;
+        }
+
+        #login {
+            width: 346px;
+            padding: 9px;
+            font-size: 12px;
+            background-color: rgb(94, 138, 123);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 30px;
+            
+        }
+        #login:hover{
+            color: rgb(94, 138, 123);
+            background-color: white;
+            border: 1px solid rgb(94, 138, 123);
+        }
+
+        #google {
+            width: 346px;
+            padding: 9px;
+            font-size: 12px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(201, 199, 199);
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        #google:hover{
+            background-color: rgb(94, 138, 123);
+            border: none;
+            color: white;
+        }
+
+        .last{
+            font-size: 12px;
+            text-align: center;
+            padding-right: 42px;
+            text-decoration: none;
+        }
+        .last > a{
+            text-decoration: none;
+        }
+        .image {
+            background-image: url("https://cdn.sanity.io/images/9cmi36py/production/2760940903f629a07716d70f3b9542c6ea4fff16-400x600.jpg");
+            width: 400px;
+            height: 560px;
+            float: right;
+            margin-top: 10 px;
+            margin-right: -27px;
+            border-radius: 5px;
+            overflow: auto;
+            display: flex;
+
+        }
+
+
+
+        .righthead {
+            font-size: 15px;
+            font-weight: 200;
+            color: white;
+            position: fixed;
+            bottom: 85px;
+            width: 330px;
+            align-items: end;
+            display: flex;
+            padding-left: 10px;
+
+
+        }
+
+        .rightpara {
+            font-size: 11px;
+            font-weight: 200;
+            color: white;
+            position: fixed;
+            bottom: 55px;
+            display: flex;
+            width: 350px;
+            justify-content: flex-end;
+            padding-left: 10px;
+        }
