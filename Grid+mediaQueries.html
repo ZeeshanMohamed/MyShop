@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Using Media Queries</title>
+    <style>
+
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        nav{
+            grid-area: navbar;
+
+        }
+
+        section{
+            grid-area: section;
+        }
+
+        aside{
+            grid-area: aside;
+        }
+
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+        @media (max-width: 300px){
+            body{
+                background-color: red;
+            }    
+            .container{
+                grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media (min-width: 300px) and (max-width:500px){
+            body{
+                background-color: blue;
+            }    
+            .container{
+                grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }
+        aside{
+            display: none;
+        }
+        span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media (min-width: 500px) and (max-width:800px){
+            body{
+                background-color: yellow;
+            }    
+            .container{
+                grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }   
+            span{
+                display: block;
+                text-align: center;
+            }
+
+        }
+        @media (min-width: 800px){
+            body{
+                background-color: green;
+            }    
+        }
+
+        .bdr{
+            border: 2px solid black;
+            padding: 23px;
+            background-color: wheat;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>
+                Home
+            </span>
+            <span>
+                about
+            </span>
+            <span>
+                contact
+            </span>  
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in Urdu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nemo, maiores quaerat, exercitationem consectetur dolorum laudantium, aliquam cumque repellat reprehenderit minima autem iste illo magnam! Omnis, harum vitae fugiat officiis quis laboriosam consequatur sequi nobis nostrum vel natus, ipsum amet modi rerum obcaecati, quaerat quo. Optio nemo cum beatae consequatur. Tempore aut cumque accusantium deleniti placeat natus debitis, consequuntur cum architecto vel earum velit, vero incidunt obcaecati, eos recusandae. Minima earum debitis quisquam quidem aliquam iusto. Vel architecto odio non magnam ex quidem soluta. Aliquid quia at eos doloribus sequi ad optio eum fugit ratione beatae magnam autem dicta cupiditate numquam amet repellat perspiciatis, dolorum, quis vero ipsum. Suscipit iste cumque, voluptates ad laborum vel voluptatem ipsam magni. Corrupti esse nisi iure!</p>
+        </section>
+        <aside class="bdr">
+            <h1>more about us</h1>
+        </aside>
+    </div>
+        <footer class="bdr">
+            CopyRight
+        </footer>
+</body>
+</html>

@@ -1,11 +1,11 @@
-@media (max-width: 375px){
+@media (max-width: 400px){
     body{
         font-family: "Titillium Web", serif;
         background-color: rgb(94, 138, 123);
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 85vh;
+        height: 100vh;
         margin: 0;
         }
     .container { 
@@ -15,8 +15,11 @@
         overflow: hidden;
         background-position: center;
         /* max-width: 780px; */
-        width: 430px;
+        width: 390px;
         height: 550px;
+        width: 390px;
+        height: 550px;
+        
         
    
         
@@ -30,6 +33,7 @@
         padding: 32px;
         margin-right: 35px;
         justify-content: center;
+        
     }
     #head{
         margin-top: 30px;
@@ -119,7 +123,7 @@
     }
     
 }
-@media (min-width: 376px) and (max-width: 900px){
+@media (min-width: 400px) and (max-width: 900px){
     body{
         font-family: "Titillium Web", serif;
         background-color: rgb(94, 138, 123);
@@ -127,7 +131,7 @@
         justify-content: center;
         align-items: center;
         height: 85vh;
-        margin: 0;
+        margin: 41px;
         }
     .container { 
         display: flex;
@@ -237,9 +241,6 @@
     .right{
         display: none;
     }
-    
-    
-
 }
 
 
